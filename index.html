@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>EVENT і ЩЕ</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   <header class="main-index__header">
+     <div class="container">
+       <h1 class="main-nav__name">Ивент и ще</h1>
+          <nav class="main-nav">
+          <ul class="main-nav__items">
+             <li class="main-nav__item">Наші події</li>
+             <li class="main-nav__item">Контакти</li>
+           </ul>
+        </nav>
+      </div>
+    </header>
+
+	<section class="main-page">
+		<div class="main-page__wrapper container">
+		  <h1 class="main-page__descript">Влаштовуємо свята</h1>
+		  <h2>В Києві та області</h2>
+		  <p>Весілля, корпоративи, дні народження, дитячі свята, кейтеринг, ведучі, фотозйомка, відеозйомка</p>
+		  <p class="more more--main-page">і ще!</p>
+		  <div class="button--main-page">Замовте подію</div>
+		  <p>або наберіть</p>
+		  <div class="main-page__phone">+38 097 780 4599</div>
+		</div>
+	</section>
+
+	<section class="events">
+		<div class="wrapper__events container">
+			<h3 class="events__title">Обери свою подію</h3>
+				<ul class="events__list">
+					<li class="events__item events__item--wedding">
+						<img src="img/main_items_wedding.png">
+						<a>Весілля</a>
+					</li>
+					<li class="events__item events__item--corporate">
+						<img src="img/main_items_corporate.png">
+						<a>Корпоративне свято</a>
+					</li>
+					<li class="events__item events__item--conference">
+						<img src="img/main_items_conference.png">
+						<a>Конференція</a>
+					</li>
+					<li class="events__item events__item--children">
+						<img src="img/main_items_childern.png">
+						<a>Дитяче свято</a>
+					</li>
+				</ul>
+			</div>
+	</section>
+	<section class="products">
+		<div class="products__wrapper container">
+		<h3>Або замов святкові послуги</h3>
+			<ul class="products__list">
+				<li class="products__item products__item--video">
+					<img src="img/video_cam.png">
+					<a>Відеозйомка</a>
+				</li>
+				<li class="products__item products__item--music">
+					<img src="img/sax.png">
+					<a>Музики</a>
+				</li>
+				<li class="products__item products__item--katering">
+					<img src="img/katerign.png">
+					<a>Кейтеринг</a>
+				</li>
+				<li class="products__item products__item--photo">
+					<img src="img/photo.png">
+					<a>Фотозйомка</a>
+				</li>
+				<li class="products__item products__item--decorating">
+					<img src="img/decor.png">
+					<a>Оздоблення</a>
+				</li>
+				<li class="products__item products__item--cakes">
+					<img src="img/cakes.png">
+					<a>Торти</a>
+				</li>
+				<li class="products__item products__item--organization">
+					<img src="img/organization.png">
+					<a>Плануванная</a>
+				</li>
+				<li class="products__item products__item--tamada">
+					<img src="img/tamada.png">
+					<a>Ведучі</a>
+				</li>
+			</ul>
+			<div class="products__afterword">
+				<p class="more more--products">і ще</p><p>багато іншого</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="order">
+		<div class="order__wrapper container">
+			<form class="form">
+				<label class="form__title">Замовте свято зараз</label>
+				<ul>
+				  <li><label for="name" class="form__label form__label--text">Ваше ім'я</label></li>
+				  <li><input type="text" id="name" name="name" class="form__input form__input--text"></li>
+				  <li><label for="phone" class="form__label form__label--text">телефон</label></li>
+				  <li><input type="text" id="phone" name="phone" class="form__input form__input--text"></li>
+				  <li><label for="email" class="form__label form__label--text">ел.пошта</label></li>
+				  <li><input type="text" id="email" name="email" class="form__input form__input--text"></li>
+			      <li><label for="event" class="form__label form__label--text">ваша подія</label></li>
+				  <li>
+				    <select id="event" name="event" class="form__input form__input--text">
+				      <option>Весілля</option>
+ 				      <option>Корпоратив</option>
+ 					  <option>Конференція</option>
+ 					  <option>Дитяче свято</option>
+ 					  <option>День народження</option>
+ 					  <option>Заручини</option>
+					</select>
+
+				  </li>
+				  <li><label for="product" class="form__label form__label--select">окремі послуги</label></li>
+				  <li>
+				  	<select id="product" name="product" class="form__input form__input--select" multiple size="10">
+				      <option>Ведучі</option>
+					  <option>Кейтеринг</option>
+					  <option>Фотозйомка</option>
+					  <option>Відеозйомка</option>
+					  <option>Весілля</option>
+					  <option>Торти</option>
+					  <option>Планування</option>
+					  <option>Оздоблення</option>
+					</select>
+				  </li>
+				  <li><label for="date" class="form__label form__label--date">дата події</label></li>
+				  <li><input type="date" name="date" id="date" class="form__input form__input--date"></li>
+				  <li><label for="guest_num" class="form__label form__label--guest-num">кількість гостей</label></li>
+				  <li><input type="number" name="guest-num" id="guest-num" class="form__input form__input--date"></li>
+				  <li><label for="specials" class="form__label form__label--specials"></label></li>
+				  <li><input type="textarea" rows="6" name="specials" class="form__input form__input--textarea"></li>
+
+				  <li><input type="submit" name="order" id="order" class="form__input form__input--submit" value="замовити подію"></li>
+				    </ul>
+			</form>
+		</div>
+		<footer class="page-footer container">
+		<div class="page-footer__phone">
+		тел.: +38 067 780 4599
+		</div>
+		<div class="page-footer__social-buttonons">
+        <ul class="page-footer__social-buttons-list">
+          <li class="page-footer__social-button page-footer__social-button--facebook">facebook</li>
+          <li class="page-footer__social-button page-footer__social-button--vkontakt">vkontakte</li>
+          <li class="page-footer__social-button page-footer__social-button--insta">instagram</li>
+        </ul>
+      </div>
+		</footer>
+	</section>
+
+
+</body>
+</html>
