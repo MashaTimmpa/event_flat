@@ -186,7 +186,7 @@ background-color: #ffa000;
 .main-nav__toggle--opened::after {
   transform: rotate(-45deg);
 }
-  @media (min-width: 320px) and (max-width: 1200px) {
+  @media (min-width: 320px) and (max-width: 768px) {
   .main-nav--closed .main-nav__item {
     display: none;
   }
