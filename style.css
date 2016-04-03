@@ -235,10 +235,10 @@ background-color: #ffa000;
 		min-height: 70px;
   }
 
-  .main-index__header{
-    background-color: #ffa000;
+  // .main-index__header{
+  //   background-color: #ffa000;
 
-  }
+  // }
 
 }
 
@@ -303,12 +303,12 @@ margin-left: 0;
 }
 
 
-@media (min-width: 768px) {
+// @media (min-width: 768px) {
 
-}
-@media (min-width: 1200px) {
+// }
+// @media (min-width: 1200px) {
 
-}
+// }
 /*--------------------main-page-------------------*/
 
 .main-page {
@@ -318,6 +318,7 @@ margin-left: 0;
 box-shadow:         0px -5px 25px 0px rgba(50, 50, 50, 0.2);
 z-index: 2;
 background: #ffc107 url("img/bg_main@1x.png") no-repeat 50% 100%;
+background-size: 100%;
 padding-bottom: 160px;
 }
 
@@ -325,8 +326,11 @@ padding-bottom: 160px;
 	display: flex;
 	flex-direction: column;
     text-align: center;
-
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
+
 .main-page__descript,
 .main-page__main-order {
 color: #fff;
