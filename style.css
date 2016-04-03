@@ -497,18 +497,37 @@ padding-bottom: 240px;
 
 
 /*---------------------events----------------------*/
+.products__title,
+.events__title {
+	font-family: "peach_milkregular";
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	padding: 20px 0;
+	margin: 0;
+}
 
 .events__item {
-	display: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 45px 55px;
+	text-align: center;
 }
 
 .events__item img {
 	display: block;
+	margin-bottom: 10px;
 }
 
 .events__item a {
 	color: #ffc107;
-	width: 100%;
+	width: auto;
+	font-family: "peach_milkregular";
+	font-size: 40px;
+	font-weight: normal;
+	border-bottom: 1px solid  #ffc107;
+
 }
 
 .events__item--wedding {
@@ -535,22 +554,42 @@ padding-bottom: 240px;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
-
+    .form__title,
 	.events__item {
-		flex-basis: 50%;
+		width: 31%;
+	}
+	.products__title,
+	.events__title {
+		font-size: 40px
 	}
 }
 
 @media (min-width: 1200px) {
 	.events__item {
-		flex-basis: 50%;
+		width: 38%;
+	}
+	.products__title,
+	.events__title {
+		font-size: 50px
 	}
 }
 
 /*----------------Products------------------*/
 
+.products__wrapper {
+	display: flex;
+	flex-direction: column; }
+
 .products {
-	display: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.products__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 0;
 }
 
 .products__item img {
@@ -558,28 +597,41 @@ padding-bottom: 240px;
 }
 
 .products__item a {
-
-	width: 100%;
+	font-size: 30px;
+	padding-top: 16px;
 }
 
 .products__item--video,
 .products__item--decorating {
 background-color: #ffc107;
+color: #ff4a63;
 }
 
 .products__item--music,
 .products__item--photo {
 background-color: #ff4a63;
+color: #03a9f4;
 }
 
 .products__item--katering,
 .products__item--organization {
 background-color: #00a100;
+color: #ffc107;
 }
 
 .products__item--cakes,
 .products__item--tamada {
 background-color: #03a9f4;
+color: #ff4a63;
+}
+.products__afterword {
+	color: #ff4a63;
+font-size: 30px;
+text-align: center;
+padding: 0;}
+
+.products__afterword p {
+	margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -592,6 +644,10 @@ background-color: #03a9f4;
 	.products__item {
 		width: 50%;
 	}
+
+	.products__afterword {
+font-size: 50px;
+}
 
 
 .products__item--video{
@@ -639,6 +695,11 @@ background-color: #03a9f4;
 
 .products__item--decorating {
 	order: 6;
+}
+.products__afterword {
+
+font-size: 70px;
+text-align: right;
 }
 }
 
