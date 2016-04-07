@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <title>EVENT і ЩЕ</title>
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -125,28 +126,34 @@
 	<section class="order">
 		<div class="order__wrapper container">
 			<form class="form">
-				<label class="form__title">Замовте свято зараз</label>
-				<ul>
-				  <li><label for="name" class="form__label form__label--text">Ваше ім'я</label></li>
-				  <li><input type="text" id="name" name="name" class="form__input form__input--text"></li>
-				  <li><label for="phone" class="form__label form__label--text">телефон</label></li>
-				  <li><input type="text" id="phone" name="phone" class="form__input form__input--text"></li>
-				  <li><label for="email" class="form__label form__label--text">ел.пошта</label></li>
-				  <li><input type="text" id="email" name="email" class="form__input form__input--text"></li>
-			      <li><label for="event" class="form__label form__label--text">ваша подія</label></li>
-				  <li>
-				    <select id="event" name="event" class="form__input form__input--text">
-				      <option>Весілля</option>
- 				      <option>Корпоратив</option>
- 					  <option>Конференція</option>
- 					  <option>Дитяче свято</option>
- 					  <option>День народження</option>
- 					  <option>Заручини</option>
-					</select>
-
-				  </li>
-				  <li><label for="product" class="form__label form__label--select">окремі послуги</label></li>
-				  <li>
+			<label class="form__title">Замовте свято зараз</label>
+			  <ul class="form__fieldset">
+				<li class="form__item">
+				  <label for="name" class="form__label form__label--text">Ваше ім'я</label>
+				  <input type="text" id="name" name="name" class="form__input form__input--text">
+				</li>
+				<li class="form__item">
+				  <label for="phone" class="form__label form__label--text">телефон</label>
+				  <input type="text" id="phone" name="phone" class="form__input form__input--text">
+				</li>
+				<li class="form__item">
+				  <label for="email" class="form__label form__label--text">ел.пошта</label>
+				  <input type="text" id="email" name="email" class="form__input form__input--text">
+				</li>
+			  </ul>
+			  <ul class="form__fieldset form__fieldset--events">
+			    <li class="form__item">
+			      <label for="event" class="form__label form__label--text">ваша подія</label><select id="event" name="event" class="form__input form__input--select">
+			          <option>Весілля</option>
+				      <option>Корпоратив</option>
+					  <option>Конференція</option>
+					  <option>Дитяче свято</option>
+					  <option>День народження</option>
+					  <option>Заручини</option>
+				  </select>
+				 </li>
+			     <li class="form__item">
+					<label for="product" class="form__label form__label--select">окремі послуги</label>
 				  	<select id="product" name="product" class="form__input form__input--select" multiple size="10">
 				      <option>Ведучі</option>
 					  <option>Кейтеринг</option>
@@ -158,15 +165,23 @@
 					  <option>Оздоблення</option>
 					</select>
 				  </li>
-				  <li><label for="date" class="form__label form__label--date">дата події</label></li>
-				  <li><input type="date" name="date" id="date" class="form__input form__input--date"></li>
-				  <li><label for="guest_num" class="form__label form__label--guest-num">кількість гостей</label></li>
-				  <li><input type="number" name="guest-num" id="guest-num" class="form__input form__input--date"></li>
-				  <li><label for="specials" class="form__label form__label--specials"></label></li>
-				  <li><input type="textarea" rows="6" name="specials" class="form__input form__input--textarea"></li>
-
-				  <li><input type="submit" name="order" id="order" class="form__input form__input--submit" value="замовити подію"></li>
-				    </ul>
+				</ul>
+				<ul  class="form__fieldset form__fieldset--particulars">
+				  <li class="form__item">
+				    <label for="date" class="form__label form__label--date">дата події</label>
+				    <input type="date" name="date" id="date" class="form__input form__input--date">
+				   </li>
+				  <li class="form__item">
+				    <label for="guest_num" class="form__label form__label--guest-num">кількість гостей</label>
+				    <input type="number" name="guest-num" id="guest-num" class="form__input form__input--date">
+				</ul>
+				<div class="form__item">
+				  <label for="specials" class="form__label form__label--specials">Особливі побажання</label>
+				  <textarea rows="6" name="specials" class="form__input form__input--textarea"></textarea>
+				</div>
+				<div class="form__item form__item--submit">
+				  <input type="submit" name="order" id="order" class="button button--submit" value="замовити подію">
+				</div>
 			</form>
 		</div>
 		<footer class="page-footer container">
