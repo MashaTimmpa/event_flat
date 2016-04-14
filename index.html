@@ -59,7 +59,7 @@
 
 	<section class="events">
 		<div class="wrapper__events container">
-			<h3 class="events__title">Обери свою подію</h3>
+			<h3 class="events__title">Обери свою под&#304;ю</h3>
 				<ul class="events__list">
 					<li class="events__item events__item--wedding">
 						<img src="img/main_items_wedding.png">
@@ -86,7 +86,7 @@
 			<ul class="products__list">
 				<li class="products__item products__item--video">
 					<img src="img/video_cam.png">
-					<a>Відеозйомка</a>
+					<a>В&#304;деозйомка</a>
 				</li>
 				<li class="products__item products__item--music">
 					<img src="img/sax.png">
@@ -114,7 +114,7 @@
 				</li>
 				<li class="products__item products__item--tamada">
 					<img src="img/tamada.png">
-					<a>Ведучі</a>
+					<a>Ведуч&#304;</a>
 				</li>
 			</ul>
 			<div class="products__afterword">
@@ -124,12 +124,12 @@
 	</section>
 
 	<section class="order">
-		<div class="order__wrapper container">
+		<div class="order__wrapper">
 			<form class="form">
 			<label class="form__title">Замовте свято зараз</label>
 			  <ul class="form__fieldset">
 				<li class="form__item">
-				  <label for="name" class="form__label form__label--text">Ваше ім'я</label>
+				  <label for="name" class="form__label form__label--text">Ваше &#304;м'я</label>
 				  <input type="text" id="name" name="name" class="form__input form__input--text">
 				</li>
 				<li class="form__item">
@@ -143,19 +143,19 @@
 			  </ul>
 			  <ul class="form__fieldset form__fieldset--events">
 			    <li class="form__item">
-			      <label for="event" class="form__label form__label--text">ваша подія</label><select id="event" name="event" class="form__input form__input--select">
-			          <option>Весілля</option>
+			      <label for="event" class="form__label form__label--text">ваша под&#304;я</label><select id="event" name="event" class="form__input form__input--select">
+			          <option>Вес&#304;лля</option>
 				      <option>Корпоратив</option>
-					  <option>Конференція</option>
+					  <option>Конференц&#304;я</option>
 					  <option>Дитяче свято</option>
 					  <option>День народження</option>
 					  <option>Заручини</option>
 				  </select>
 				 </li>
 			     <li class="form__item">
-					<label for="product" class="form__label form__label--select">окремі послуги</label>
-				  	<select id="product" name="product" class="form__input form__input--select" multiple size="10">
-				      <option>Ведучі</option>
+					<label for="product" class="form__label form__label--select">окрем&#304; послуги</label>
+				  	<select id="product" name="product" class="form__input form__input--select" multiple size="1">
+				      <option>Ведуч&#304;</option>
 					  <option>Кейтеринг</option>
 					  <option>Фотозйомка</option>
 					  <option>Відеозйомка</option>
@@ -168,15 +168,16 @@
 				</ul>
 				<ul  class="form__fieldset form__fieldset--particulars">
 				  <li class="form__item">
-				    <label for="date" class="form__label form__label--date">дата події</label>
+				    <label for="date" class="form__label form__label--date">дата под&#304;ї</label>
 				    <input type="date" name="date" id="date" class="form__input form__input--date">
 				   </li>
 				  <li class="form__item">
-				    <label for="guest_num" class="form__label form__label--guest-num">кількість гостей</label>
+				    <label for="guest_num" class="form__label form__label--guest-num">к&#304;льк&#304;сть гостей</label>
 				    <input type="number" name="guest-num" id="guest-num" class="form__input form__input--date">
+				   </li>
 				</ul>
-				<div class="form__item">
-				  <label for="specials" class="form__label form__label--specials">Особливі побажання</label>
+				<div class="form__item form__item--specials">
+				  <label for="specials" class="form__label form__label--specials">Особлив&#304; побажання</label>
 				  <textarea rows="6" name="specials" class="form__input form__input--textarea"></textarea>
 				</div>
 				<div class="form__item form__item--submit">
@@ -184,19 +185,30 @@
 				</div>
 			</form>
 		</div>
-		<footer class="page-footer container">
-		<div class="page-footer__phone">
-		тел.: +38 067 780 4599
-		</div>
-		<div class="page-footer__social-buttonons">
-        <ul class="page-footer__social-buttons-list">
-          <li class="page-footer__social-button page-footer__social-button--facebook">facebook</li>
-          <li class="page-footer__social-button page-footer__social-button--vkontakt">vkontakte</li>
-          <li class="page-footer__social-button page-footer__social-button--insta">instagram</li>
-        </ul>
-      </div>
-		</footer>
 	</section>
+
+	<footer class="page-footer">
+	  <div class="container">
+	    <div class="footer__logo">
+	      <a>
+	        <picture>
+              <img src="..img/logo-event" alt="EVENT &#304; ще">
+            </picture>
+          </a>
+        </div>
+	    <div class="page-footer__phone">
+		  <a href="tel:+380677804599">  тел.: +38 067 780 4599</a>
+        </div>
+	    <div class="page-footer__social-buttons">
+	        <ul class="page-footer__social-buttons-list">
+	          <li class="page-footer__social-button page-footer__social-button--facebook"><a href="facebook.com" target="_blank">F</a></li>
+	          <li class="page-footer__social-button page-footer__social-button--vkontakt"><a href="https://vk.com" target="_blank">В</a></li>
+	          <li class="page-footer__social-button page-footer__social-button--insta"><a href="https://www.instagram.com/" target="_blank">I</a></li>
+	        </ul>
+	      </div>
+      </div>
+    </footer>
+
 
 
 </body>
